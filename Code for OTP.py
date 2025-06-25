@@ -1,6 +1,14 @@
 # otp_service.py
 
 import random
+from twilio.rest import Client
+
+# Your Twilio Account SID, Auth Token, and Twilio Phone Number
+# IMPORTANT: Replace these placeholders with your actual Twilio credentials.
+TWILIO_ACCOUNT_SID = '' # Your Twilio Account SID
+TWILIO_AUTH_TOKEN = ''  # Your Twilio Auth Token
+TWILIO_PHONE_NUMBER = '+14437323022' # Your Twilio phone number (e.g., from Twilio dashboard)
+
 
 def generate_otp():
     """
